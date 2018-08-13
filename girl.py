@@ -3,7 +3,6 @@
 from urllib import request
 from bs4 import BeautifulSoup as bs
 import os
-import requests
 
 dir = "C:\\Users\\Administrator\\Desktop\\xiaohua"
 url = "http://www.xiaohuar.com/2014.html"
@@ -29,7 +28,8 @@ for girl in allGirl:
     if not imgUrl.startswith('http://'):
         imgUrl = imgStart + imgUrl
     # 下载图片
-    a = requests.get(imgUrl)
+    img = request.Request(imgUrl)
+    response = request.urlopen(img)
     with open(r'%s\%s.jpg' % (dir, name), 'wb') as f:
-        f.write(a.content)
+        f.write(response.read())
         print("%s====下载完成..." % name)
