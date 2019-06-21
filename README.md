@@ -5,9 +5,14 @@ python学习的相关代码
 - BeautifulSoup
 - pymysql
 - requests
+- itchat
+- jieba
+- wordcloud
 
 #### [juejin.py](https://github.com/azhon/Python/blob/master/juejin.py) —— 爬取掘金Android分类的文章
 
 #### [pymsql](https://github.com/azhon/Python/tree/master/pymysql) —— [操作MySQL](https://blog.csdn.net/a_zhon/article/details/81630825)
 
 #### [girl.py](https://github.com/azhon/Python/tree/master/girl.py) —— 爬取2014年榜单校花图片
+
+#### [wechat](https://azhon.blog.csdn.net/article/details/93190139) —— 获取微信好友的个性签名生成词云图
